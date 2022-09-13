@@ -22,3 +22,4 @@ Scoped css is applied only on the same component, however non scoped css is appl
 
 # Question 6
 
+Non-prop attributes passed to a component, if it has a single root element, will automatically be added to that root component.
