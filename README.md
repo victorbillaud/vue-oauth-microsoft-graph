@@ -16,3 +16,9 @@ Babel is use for make your project compatible with many browsers
 
 Eslint is a package for force your code to be in the good syntax of javascript version.
 
+# Question 5 
+
+Scoped css is applied only on the same component, however non scoped css is applied on all components of the project with the same class name.
+
+# Question 6
+
