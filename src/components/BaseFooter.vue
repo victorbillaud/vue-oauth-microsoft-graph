@@ -7,7 +7,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
     .container-footer {
         position: absolute;
         bottom: 0;

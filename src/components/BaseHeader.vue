@@ -12,7 +12,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
     .container-header {
         width: 100vw;
         background-color: rgb(40, 40, 40);
