@@ -2,18 +2,19 @@
 export default {
     props: {
         title: String,
-        disabled: Boolean
+        disabled: Boolean,
+        color: String
     }
 }
 </script>
 
 <template>
-    <button :disabled=disabled >{{title}}</button>
+    <button :disabled=disabled :style="'background-color: ' + color" >{{title}}</button>
 </template>
 
 <style scoped>
     button {
-        background-color: rgb(75, 180, 75);
+        background-color: #198754;
         padding: 1em;
         margin: 0.5em;
         border: none;
