@@ -1,24 +1,18 @@
-# vue-oauth-microsoft-graph
+## TP 3 - Vue pratical activity part
 
-## Project setup
-```
-npm install
-```
+# Question 1
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+When we instal the package locally we can use only in directory related with the current directory, globally we can use the cli wherever you want on your computer.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# Question 2
 
-### Lints and fixes files
-```
-npm run lint
-```
+Because vue work with many components and for sure there are many files for each component.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Question 3
+
+Babel is use for make your project compatible with many browsers 
+
+# Question 4 
+
+Eslint is a package for force your code to be in the good syntax of javascript version.
+
