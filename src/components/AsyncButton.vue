@@ -1,23 +1,22 @@
 <template>
         <base-button
-            :title="isPending ? 'Button waiting' : 'Button loading'"
-            :color="color" 
+            :title="isPending ? 'Button loading' : 'Button waiting'"
+            :color="isPending ? color.WARN : color.PRIMARY" 
             @click.prevent.stop="count++;handleClick()"
         />
 </template>
 
 <script>
     import BaseButton from './BaseButton.vue'
+    import Colors from '@/utils/Colors'
   
     export default {
         name: 'AsyncButton',
         components: { BaseButton },
         inheritAttrs: false,
-        props: {
-            color: String
-        },
         data () {
             return {
+                color: Colors,
                 isPending: false,
                 count: 0
             }

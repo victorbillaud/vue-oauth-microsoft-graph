@@ -22,6 +22,6 @@ export default {
         <BaseButton title="BaseButton disabled" disabled/>
         <BaseButton title="BaseButton disabled" :color=color.WARN />
         <BaseButton title="BaseButton disabled" :color=color.DANGER />
-        <async-button :color=color.PRIMARY />
+        <async-button />
     </div>
 </template>
