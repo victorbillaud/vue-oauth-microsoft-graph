@@ -1,10 +1,9 @@
 <template>
-    <base-button
-        title="Disabled and animated for 2 seconds if clicked"
-        :disabled="isPending"
-        :color="color"
-        @click.stop.prevent="count++;handleClick()"
-    />
+        <base-button
+            :title="isPending ? 'Button waiting' : 'Button loading'"
+            :color="color" 
+            @click.prevent.stop="count++;handleClick()"
+        />
 </template>
 
 <script>
@@ -26,11 +25,11 @@
         methods: {
             handleClick () {
                 this.isPending = true
-                new Promise(() => {
-                    setTimeout(() => {
-                        this.isPending = false
-                    }, 2000)
-                })
+
+                const currentCount = this.count
+                const promise = delay => new Promise(resolve => setTimeout(resolve, delay))
+
+                promise(this.count*1000).finally(() => currentCount == this.count ? (this.isPending = false, this.count = 0) : this.handleClick)
             }
         }
     }
